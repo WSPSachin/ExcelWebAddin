@@ -13,7 +13,7 @@
     async function setColor() {
         await Excel.run(async (context) => {
             const range = context.workbook.getSelectedRange();
-            range.format.fill.color = 'yellow';
+            range.format.fill.color = 'red';
 
             await context.sync();
         }).catch(function (error) {
